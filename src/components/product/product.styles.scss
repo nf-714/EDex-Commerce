@@ -1,0 +1,6 @@
+.product-container {
+    color: red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the gap between items as needed */
+  
+}

@@ -17,7 +17,7 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 const Navigation = () => {
   const navigate = useNavigate();
   const { currentUser, setCurrentUser } = useContext(UserContext)
-  const { cartToggle, setCartToggle } = useContext(CartContext)
+  const { cartToggle, isCartActive } = useContext(CartContext)
 
   const userReset = () => {
     signOutUser()
@@ -26,7 +26,7 @@ const Navigation = () => {
   }
 
   const handleDropDown = () => {
-    setCartToggle(!cartToggle)
+    isCartActive()
   }
 
 

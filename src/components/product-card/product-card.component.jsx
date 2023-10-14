@@ -15,10 +15,8 @@ const Product_card = ({ items }) => {
         imageUrl
     } = items
 
-    const { currentUser } = useContext(UserContext)
-    const { cartItems, setCartItems, addItemToCart } = useContext(CartContext)
+    const { addItemToCart } = useContext(CartContext)
     const addToCart = () => {
-        console.log(items)
         addItemToCart(items)
     }
 
